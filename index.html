@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Velvet Vogue | Express Your Style</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff4081;
+        }
+
+        .hero {
+            background: url("https://images.unsplash.com/photo-1520975916090-3105956dac38") no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+        }
+
+        .hero button {
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: none;
+            background-color: #ff4081;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .section {
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 40px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+        }
+
+        .product-card p {
+            color: #777;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            background: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        footer {
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 768px){
+            header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Velvet Vogue</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div>
+        <h2>Discover Your Unique Style</h2>
+        <button onclick="goToShop()">Shop Now</button>
+    </div>
+</section>
+
+<section class="section">
+    <h2>New Arrivals</h2>
+
+    <div class="products">
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518">
+            <h3>Casual Denim Jacket</h3>
+            <p>$49.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d">
+            <h3>Elegant Formal Dress</h3>
+            <p>$79.99</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b">
+            <h3>Classic White Shirt</h3>
+            <p>$29.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Velvet Vogue | All Rights Reserved</p>
+</footer>
+
+<script>
+    function goToShop(){
+        window.location.href = "products.html";
+    }
+</script>
+
+</body>
+</html>
