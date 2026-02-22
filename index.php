@@ -134,9 +134,9 @@
 <header>
     <h1>Velvet Vogue</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Shop</a>
-        <a href="cart.html">Cart</a>
+        <a href="index.php">Home</a>
+        <a href="products.php">Shop</a>
+        <a href="cart.php">Cart</a>
         <a href="login.php">Login</a>
         <a href="contact.html">Contact</a>
     </nav>
