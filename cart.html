@@ -126,7 +126,7 @@
         <a href="index.html">Home</a>
         <a href="products.html">Shop</a>
         <a href="cart.html">Cart</a>
-        <a href="login.html">Login</a>
+        <a href="login.php">Login</a>
     </nav>
 </header>
 
@@ -149,7 +149,7 @@
 
     <div class="total-section">
         <h3>Total Amount: $<span id="grandTotal">0.00</span></h3>
-        <button class="checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+        <button class="checkout-btn" onclick="window.location='checkout.php'">Proceed to Checkout</button>
         <button onclick="clearCart()">Clear Cart</button>
     </div>
 </div>
@@ -211,9 +211,7 @@
         displayCart();
     }
 
-    function checkout() {
-        alert("Checkout functionality will connect to database in next step.");
-    }
+    
 
     displayCart();
 </script>
