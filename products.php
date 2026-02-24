@@ -476,7 +476,7 @@ $result = $conn->query($sql);
             <?php endif; ?>
         </a>
         <a href="login.php">Login</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.php">Contact</a>
     </nav>
 </header>
 

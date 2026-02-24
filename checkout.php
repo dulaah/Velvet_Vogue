@@ -655,9 +655,51 @@ foreach($cart as $pid => $qty){
 <script>
     // Submit the shipping form when "Place Order" is clicked from the summary panel
     function submitOrder(){
-        const form = document.querySelector('form[action="place_order.php"]');
-        form.submit();
+     const form = document.querySelector('form[action="place_order.php"]');
+
+    const fullName = document.getElementById("fullName").value.trim();
+    const email    = document.getElementById("email").value.trim();
+    const address  = document.getElementById("address").value.trim();
+    const city     = document.getElementById("city").value.trim();
+    const zip      = document.getElementById("zip").value.trim();
+    const payment  = document.getElementById("payment").value;
+
+    // Remove old messages
+    let oldMsg = document.getElementById("formMessage");
+    if(oldMsg) oldMsg.remove();
+
+    const messageDiv = document.createElement("div");
+    messageDiv.id = "formMessage";
+    messageDiv.style.padding = "12px";
+    messageDiv.style.marginBottom = "15px";
+    messageDiv.style.borderRadius = "6px";
+    messageDiv.style.textAlign = "center";
+    messageDiv.style.fontWeight = "bold";
+
+    // ❌ If empty fields
+    if(fullName === "" || email === "" || address === "" || city === "" || zip === "" || payment === ""){
+        
+        messageDiv.style.background = "#ffe0e0";
+        messageDiv.style.color = "#c00";
+        messageDiv.innerText = "All fields are required!";
+        
+        form.prepend(messageDiv);
+        return;
     }
+
+    // ✅ Success message before submit
+    messageDiv.style.background = "#e0ffe5";
+    messageDiv.style.color = "#008000";
+    messageDiv.innerText = "Order submitted successfully! Processing...";
+
+    form.prepend(messageDiv);
+
+    // Small delay so user can see message
+    setTimeout(function(){
+        form.submit();
+    }, 1000);
+};
+   
 
     // Show mobile button on small screens
     function checkMobile(){

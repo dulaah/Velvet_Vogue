@@ -427,7 +427,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         <a href="products.php">Shop</a>
         <a href="cart.php">Cart</a>
         <a href="login.php" class="active">Login</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.php">Contact</a>
     </nav>
 </header>
 

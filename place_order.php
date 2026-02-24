@@ -17,9 +17,20 @@ $zip      = $_POST['zip'] ?? '';
 $payment  = $_POST['payment'] ?? '';
 $totalAmount = $_POST['totalAmount'] ?? 0;
 
-if(!$fullName || !$email || !$address || !$city || !$zip || !$payment){
-    die("All fields are required!");
-}
+// if(empty($fullName) || empty($email) || empty($address) || empty($city) || empty($zip) || empty($payment)){
+//     echo "<div style='
+//         background:#ffe0e0;
+//         color:#c00;
+//         padding:15px;
+//         margin:20px;
+//         border-radius:6px;
+//         text-align:center;
+//         font-weight:bold;
+//     '>
+//         All fields are required!
+//     </div>";
+//     exit;
+// }
 
 // Insert into orders table
 $stmt = $conn->prepare("INSERT INTO orders (customer_name, email, address, city, zip, payment_method, total_amount, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, NOW())");
@@ -47,6 +58,6 @@ foreach($cart as $pid => $qty){
 // Clear cart session
 unset($_SESSION['cart']);
 
-echo "<h2>Thank you! Your order has been placed successfully.</h2>";
+// echo "<h2>Thank you! Your order has been placed successfully.</h2>";
 echo "<p><a href='index.php'>Go back to Home</a></p>";
 ?>

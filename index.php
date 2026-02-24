@@ -568,7 +568,7 @@
         <div class="product-card">
             <div class="product-img-wrap">
                 <span class="product-badge">New</span>
-                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600&q=80" alt="Casual Denim Jacket">
+                <img src="https://img-lcwaikiki.mncdn.com/mnpadding/1200/1600/ffffff/pim/productimages/20251/7674644/v1/l_20251-s5bd58z8-h45-105-81-90-187_a.jpg" alt="Casual Denim Jacket">
                 <div class="product-overlay">
                     <button class="overlay-btn">Add to Cart</button>
                 </div>
@@ -631,7 +631,7 @@
 
 <script>
     function goToShop(){
-        window.location.href = "products.html";
+        window.location.href = "products.php";
     }
 </script>
 
