@@ -569,9 +569,7 @@
             <div class="product-img-wrap">
                 <span class="product-badge">New</span>
                 <img src="https://img-lcwaikiki.mncdn.com/mnpadding/1200/1600/ffffff/pim/productimages/20251/7674644/v1/l_20251-s5bd58z8-h45-105-81-90-187_a.jpg" alt="Casual Denim Jacket">
-                <div class="product-overlay">
-                    <button class="overlay-btn">Add to Cart</button>
-                </div>
+                
             </div>
             <div class="product-info">
                 <h3 class="product-name">Casual Denim Jacket</h3>

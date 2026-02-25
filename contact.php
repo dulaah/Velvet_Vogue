@@ -487,23 +487,19 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <div class="detail-icon">☎</div>
                 <div class="detail-text">
                     <p class="detail-label">Phone</p>
-                    <p class="detail-value">+1 (800) 123-4567<br>Mon – Fri, 9am – 6pm EST</p>
+                    <p class="detail-value">+94xxxxxx<br>Mon – Fri, 9am – 6pm EST</p>
                 </div>
             </div>
             <div class="contact-detail">
                 <div class="detail-icon">◎</div>
                 <div class="detail-text">
                     <p class="detail-label">Address</p>
-                    <p class="detail-value">142 Fashion Avenue, Suite 8<br>New York, NY 10018</p>
+                    <p class="detail-value">Galle rode<br>Matara,Sri Lanka</p>
                 </div>
             </div>
         </div>
 
-        <div class="social-row">
-            <a href="#" class="social-btn">Instagram</a>
-            <a href="#" class="social-btn">Pinterest</a>
-            <a href="#" class="social-btn">TikTok</a>
-        </div>
+        
     </div>
 
     <!-- RIGHT: FORM -->
