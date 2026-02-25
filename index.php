@@ -581,9 +581,7 @@
         <div class="product-card">
             <div class="product-img-wrap">
                 <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Elegant Formal Dress">
-                <div class="product-overlay">
-                    <button class="overlay-btn">Add to Cart</button>
-                </div>
+                
             </div>
             <div class="product-info">
                 <h3 class="product-name">Elegant Formal Dress</h3>
@@ -596,9 +594,7 @@
             <div class="product-img-wrap">
                 <span class="product-badge" style="background:var(--gold);color:var(--black);">Popular</span>
                 <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=600&q=80" alt="Classic White Shirt">
-                <div class="product-overlay">
-                    <button class="overlay-btn">Add to Cart</button>
-                </div>
+                
             </div>
             <div class="product-info">
                 <h3 class="product-name">Classic White Shirt</h3>
