@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 session_start();
 include "../db.php";
 
-// Redirect if already logged inhhh
+// Redirect if already logged in
 if(isset($_SESSION['admin_id'])){
     header("Location: dashboard.php");
     exit;
