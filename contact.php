@@ -563,7 +563,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 </div>
 
-<!-- FOOER-->
+<!-- FOOERw-->
 <footer>
     <p>&copy; 2026 <span>Velvet Vogue</span> &mdash; All Rights Reserved</p>
 </footer>
