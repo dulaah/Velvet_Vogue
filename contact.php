@@ -554,7 +554,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
                 <textarea name="message" id="message"
                           placeholder="Write your message here..."
                           required><?= htmlspecialchars($_POST['message'] ?? '') ?></textarea>
-            </div>
+            </div>j
 
             <button type="submit" class="btn-send">Send Message</button>
         </form>
