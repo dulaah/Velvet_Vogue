@@ -558,7 +558,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 
             <button type="submit" class="btn-send">Send Message</button>
         </form>
-        <?php endif; ?>
+        <?php endif; ?>d
     </div>
 
 </div>
