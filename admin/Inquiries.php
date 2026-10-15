@@ -5,7 +5,7 @@ include "../db.php";
 if(!isset($_SESSION['admin_id'])){
     header("Location: admin_login.php");
     exit;
-}
+}s
 
 $adminName  = $_SESSION['admin_name'] ?? 'Admin';
 
