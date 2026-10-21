@@ -272,6 +272,9 @@ body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);dis
             <?php endif; ?>
         </a>
         <p class="nav-section-label">Store</p>
+        <a href="add_product.php" class="nav-item">
+            <span class="nav-icon">＋</span> Add Product
+        </a>
         <a href="../products.php" class="nav-item" target="_blank">
             <span class="nav-icon">🛍</span> View Store
         </a>
