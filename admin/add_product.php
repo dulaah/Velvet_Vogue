@@ -2,7 +2,7 @@
 session_start();
 include "../db.php";
 include "admin_guard.php";
-s
+
 $adminName = $_SESSION['admin_name'] ?? 'Admin';
 $errors = [];
 $values = [
